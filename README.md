@@ -7,4 +7,4 @@
 - `yarn start` to start the application server
 - press `i` in the terminal to open the app in local simulator or scan the barcode created to open the application in your Android or iOS mobile phone
 
-**(Optimized for iPhone 11/12/13 Pro - choose the device type to have the best experience)**
+**(Optimized for iPhone 11/12/13 Pro Max - choose the device type to have the best experience)**
