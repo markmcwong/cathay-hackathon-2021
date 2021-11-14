@@ -1,29 +1,30 @@
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import * as React from "react";
+
 import {
   Button,
   Center,
+  Checkbox,
   Divider,
   HStack,
   Icon,
-  VStack,
   Input,
-  Checkbox,
+  VStack,
 } from "native-base";
-import * as React from "react";
-import { useState } from "react";
 import {
-  ImageBackground,
-  StyleSheet,
-  Image,
   CheckBox,
-  TouchableWithoutFeedback,
+  Image,
+  ImageBackground,
   Keyboard,
+  StyleSheet,
+  TouchableWithoutFeedback,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { textAlign } from "styled-system";
-
 import { Text, View } from "../components/Themed";
 import { loginWithGoogle, register } from "../services/auth";
+
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { textAlign } from "styled-system";
+import { useState } from "react";
 
 export default function LandingScreen({ navigation }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -105,7 +106,7 @@ export default function LandingScreen({ navigation }) {
           <VStack paddingBottom={2}>
             <Text
               style={{ ...styles.link, marginTop: "5%" }}
-              onPress={() => navigation.navigate("FirstTime")}
+              onPress={() => navigation.navigate("Login")}
             >
               Have an account? Sign in Here
             </Text>

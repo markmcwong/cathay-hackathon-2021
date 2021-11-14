@@ -2,13 +2,9 @@ import * as React from "react";
 
 import AuthStack from "./AuthNavigation";
 import BottomTabNavigator from "./BottomTabNavigator";
-import Consultants from "../screens/Consultants";
-import LandingScreen from "../screens/LandingScreen";
-import LoginScreen from "../screens/LoginScreen";
 import NewUserStack from "./NewUserNavigator";
 import NotFoundScreen from "../screens/NotFoundScreen";
 import ProductDetail from "../screens/ProductDetail";
-import ProfileScreen from "../screens/ProfileScreen";
 import { RootStackParamList } from "../types";
 import TabOneScreen from "../screens/TabOneScreen";
 import { backgroundColor } from "styled-system";
@@ -68,14 +64,6 @@ const RootNavigator = (props: any) => {
               }}
               name="PersonDetailScreen"
               component={ProductDetail}
-            />
-            <Stack.Screen
-              options={{
-                header: () => null,
-                headerTitle: () => null,
-              }}
-              name="Profile"
-              component={ProfileScreen}
             />
           </>
         </>

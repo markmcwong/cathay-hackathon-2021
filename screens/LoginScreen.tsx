@@ -1,22 +1,23 @@
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import * as React from "react";
+
 import {
   Button,
   Center,
+  Checkbox,
   Divider,
   HStack,
   Icon,
-  VStack,
   Input,
-  Checkbox,
+  VStack,
 } from "native-base";
-import * as React from "react";
-import { useState } from "react";
-import { ImageBackground, StyleSheet, Image, CheckBox } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { textAlign } from "styled-system";
-
+import { CheckBox, Image, ImageBackground, StyleSheet } from "react-native";
 import { Text, View } from "../components/Themed";
 import { login, loginWithGoogle } from "../services/auth";
+
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { textAlign } from "styled-system";
+import { useState } from "react";
 
 export default function LoginScreen({ navigation }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -41,7 +42,7 @@ export default function LoginScreen({ navigation }) {
           <Image
             resizeMode="contain"
             style={styles.logoImage}
-            source={require("../assets/images/mindfulhack_login_5.png")}
+            source={require("../assets/images/login_5.png")}
             margin={8}
             alt="login"
           />
